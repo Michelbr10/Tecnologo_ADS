@@ -6,7 +6,7 @@ int main()
     int ano = 1996;
     int *ponteiro_ano = &ano; //ponteiro apontando para o ano
     //imprimindo o endereço do ponteiro
-    printf("Endereco do ponteiro: %p \n", ponteiro_ano);
+    printf("Endereco da variavel: %p \n", ponteiro_ano);
     //imprimindo o conteúdo da variável em que aponta o ponteiro
     printf("Conteudo da variavel: %i \n", *ponteiro_ano);
     //imprimindo o endereço na memória do próprio ponteiro
