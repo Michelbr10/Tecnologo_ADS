@@ -24,9 +24,10 @@ int main()
         printf("\n %i", ponteiro_vetor[n]);
     }
     printf("\nEndereco do vetor passada pela funcao %p", ponteiro_vetor); //endereço na memoria do vetor no main()
+    
     //criando novo vetor e chamando a função, veremos que sera atribuido o mesmo endereço do anterior e seus valores
     {
-        ponteiro_vetor2 = gerar_vetor_randomico(); //chamando a função outra vez e atribuindo o seu endereço
+        ponteiro_vetor2 = gerar_vetor_randomico(); //chamando a função outra vez e atribuindo o seu endereço na variável ponteiro_vetor2
         for (int m = 0; m < 10; m++)
         {
             printf("\n %i", ponteiro_vetor2[m]);
