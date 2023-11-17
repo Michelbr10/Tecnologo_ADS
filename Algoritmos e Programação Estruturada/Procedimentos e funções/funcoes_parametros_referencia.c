@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h> 
-
+/*As funcòes com passagens de parâmetros por referência manipulam diretamente
+os valores dos argumentos, sem precisar retorná-los para o programa principal.
+No exemplo são criadas as variáveis x e y, e atribuídos os valores de 10 e 20
+respectivamente, depois são passados os seus endereços a função.*/
 void mudar_num(int *x, int *y) //recebe os endereços passados como parâmetros
 {
     //altera os valores contidos nos endereços

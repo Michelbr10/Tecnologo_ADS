@@ -3,7 +3,7 @@
 
 int* alocar()
 {
-    int *memoria = (int*) malloc(sizeof(int));
+    int *memoria = (int*) malloc(10 * sizeof(int));
     return memoria;
 }
 
@@ -16,5 +16,6 @@ int main()
     else {
         printf("Memoria nao alocada");
     }
+    free(numero);
     return 0;
 }

@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char* alocar()
+char* alocar(int tamanho)
 {
-    char *memoria = (char*) malloc(sizeof(char));
+    char *memoria = (char*) malloc(sizeof(char) * tamanho);
     printf("Tamanho: %d bytes \n", sizeof(*memoria));
     return memoria;
 }
 
 int main()
 {
-    char *nome = alocar();
+    char *nome = alocar(101);
 
     if (nome != NULL)
     {
