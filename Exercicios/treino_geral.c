@@ -81,7 +81,8 @@ int main()
     struct Nodo * percorrer = minha_lista->inicio;
     for(int i = 0; percorrer != NULL; i++)
     {
-        printf("Nome: %s\n", percorrer->nome);
+        printf("\nNome: %s", percorrer->nome);
+        printf("\nValor: %.2f", percorrer->valor);
         percorrer = percorrer->proximo;
     }
 
